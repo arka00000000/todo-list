@@ -1,0 +1,56 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 30px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-section {
+      margin-bottom: 20px;
+    }
+
+    #nameInput {
+      padding: 10px;
+      font-size: 1em;
+      width: 200px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1em;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .boxes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #fff;
+      border: 2px solid #ccc;
+      line-height: 100px;
+      font-weight: bold;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .box:hover {
+      opacity: 0.8;
+    }
+
+   
