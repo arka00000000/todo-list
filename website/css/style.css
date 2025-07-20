@@ -1,0 +1,557 @@
+:root {
+  --font-base: 1rem;
+  --color-primary: #c62828;
+  --color-accent: #fbc02d;
+  --color-bg: #ac1717;
+  --color-text: #333;
+  --radius: 0.5rem;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: var(--font-base);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../css/image/1.avif') center/cover no-repeat;
+  padding: 1.5em 4vw;
+  box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.header-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1.5em 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: rgb(13, 120, 177);
+}
+
+
+ #p{
+  margin: 0.5em 0;
+  font-size: 1.2rem;
+  color: rgb(140, 140, 146);
+ margin-top: 7em;
+  font-weight: 500;
+}
+
+
+#hungry-btn{
+position: absolute;
+bottom: 20%;
+left: 10%;
+transform: translate(-50%, 50%);
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu li{
+  color: rgb(37, 121, 121);
+}
+
+
+.nav-menu li a:hover {
+  color: var(--color-accent);
+}
+
+.hero {
+  min-height: 90vh;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1vw;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+}
+.image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; 
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.cities-line {
+  margin-top: 0.1rem;
+  font-size: 2rem;
+  color: var(--color-accent);
+  text-align: center;
+  font-weight: 600;
+}
+
+.hero-cities {
+  display: inline-flex;
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 1.5rem;
+}
+
+.city {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.city-name {
+  display: block;
+  font-size: 1.2rem;     
+  color: #ffffff;     
+  margin-bottom: 0.3rem;
+  font-weight: 700;    
+  text-transform: uppercase; 
+}
+
+
+.city-info {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: var(--color-accent);
+}
+
+
+.image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+  z-index: 2;
+  
+}
+
+.btn {
+  margin-top: 1.5rem;
+  padding: 1em 2em;
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: var(--radius);
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #a91b1b;
+}
+
+
+
+.menu-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+}
+
+.menu-wrapper {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.menu-section {
+  background: #ce1f1f;
+  border-radius: var(--radius);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  max-width: 300px;
+  flex: 1 1 250px;
+}
+
+.menu-category {
+  font-size: 2rem;
+  color: var(--color-accent);
+  text-align: left;
+ 
+  padding-left: 10px;
+  margin-bottom: 1rem;
+}
+
+.menu-item {
+  background: #fefbfb;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #7d7676;
+}
+
+.menu-item p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-weight: bold;
+  color: #000;
+  font-size: 1rem;
+  display: block;
+}
+
+
+.menu-tab.active {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+
+
+
+
+.reservation {
+ 
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.reservation h2 {
+  font-size: 2.5rem;
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+}
+
+.reservation p {
+  font-size: 1rem;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+}
+
+.reservation-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+ color: var(--color-accent);
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.btn-submit {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #333;
+}
+
+
+
+
+
+.testimonials {
+  padding: 3rem 1rem;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-bottom: 2rem;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.testimonial {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 300px;
+  box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.05);
+  font-style: italic;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.testimonial h4 {
+  font-size: 1rem;
+  color: #222;
+  font-weight: bold;
+}
+
+
+
+
+
+
+.footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+@media (max-width: 450px) {
+  body {
+    font-size: 10px;
+    padding: 0 8px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+  }
+
+  .hero-content,
+  .reservation-form,
+  .testimonial-grid,
+  .menu-wrapper,
+  .hero-cities {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .img,
+  .city,
+  .menu-item {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn,
+  .btn-submit {
+    width: 50%;
+    text-align: center;
+    padding: 7px;
+    font-size: 7px;
+  }
+
+  .header-content h2,
+  .menu-title,
+  .menu-category,
+  .reservation h2,
+  .testimonials h2 {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group select {
+    width: 100%;
+  }
+
+  .footer p {
+    font-size: 13px;
+    text-align: center;
+  }
+}
+
+
+.menu-item p, .menu-item h4 {
+  word-wrap: break-word;
+}
+
+
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 0 12px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .nav-menu li {
+    width: 100%;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+  }
+
+  .hero-content,
+  .reservation-form,
+  .testimonial-grid,
+  .menu,
+  .menu-grid,
+  .image,
+  .form-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .menu-item,
+  .form-group,
+  .testimonial,
+  .city,
+  .menu-tab {
+    width: 100%;
+  }
+
+  .menu-title,
+  .menu-category,
+  .reservation h2,
+  .testimonials h2,
+  .feedback h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .price {
+    font-size: 1rem;
+  }
+
+  .btn,
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .footer p {
+    text-align: center;
+    font-size: 13px;
+  }
+}
